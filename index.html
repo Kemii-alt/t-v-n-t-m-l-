@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>An Tâm Psychology Clinic</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        <div class="logo-icon">♡</div>
+        <div>
+            <strong>An Tâm</strong>
+            <span>Psychology Clinic</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#booking">Đặt lịch</a>
+        <a href="#test">Tự đánh giá</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <a href="#booking" class="header-button">
+        Đặt lịch
+    </a>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="small-title">
+            PHÒNG KHÁM TÂM LÝ TƯ NHÂN
+        </span>
+
+        <h1>
+            Chăm sóc sức khỏe<br>
+            <span>tâm lý</span> của bạn
+        </h1>
+
+        <p>
+            Một không gian an toàn, riêng tư và chuyên nghiệp
+            để bạn được lắng nghe, thấu hiểu và đồng hành.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#booking" class="primary-btn">
+                Đặt lịch tư vấn
+            </a>
+
+            <a href="#test" class="secondary-btn">
+                Làm trắc nghiệm
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="person-circle">
+            ☺
+        </div>
+
+        <div class="quote-card">
+
+            <span>“</span>
+
+            <p>
+                Bạn không cần phải đối mặt
+                với mọi thứ một mình.
+            </p>
+
+            <small>
+                — An Tâm Psychology Clinic
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRUST ================= -->
+
+<section class="trust">
+
+    <div>
+        <strong>01</strong>
+        <span>Bảo mật thông tin</span>
+    </div>
+
+    <div>
+        <strong>02</strong>
+        <span>Đội ngũ chuyên môn</span>
+    </div>
+
+    <div>
+        <strong>03</strong>
+        <span>Tư vấn cá nhân hóa</span>
+    </div>
+
+    <div>
+        <strong>04</strong>
+        <span>Không gian riêng tư</span>
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" id="services">
+
+    <div class="section-heading">
+
+        <span>DỊCH VỤ</span>
+
+        <h2>
+            Gói tư vấn phù hợp<br>
+            với nhu cầu của bạn
+        </h2>
+
+        <p>
+            Lựa chọn hình thức tư vấn phù hợp
+            và bắt đầu hành trình chăm sóc sức khỏe tinh thần.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">♡</div>
+
+            <h3>Tư vấn cá nhân</h3>
+
+            <p>
+                Đồng hành với những vấn đề về cảm xúc,
+                căng thẳng, học tập và cuộc sống.
+            </p>
+
+            <strong>350.000đ / buổi</strong>
+
+            <button onclick="selectPackage('Tư vấn cá nhân - 350.000đ')">
+                Chọn gói
+            </button>
+
+        </div>
+
+
+        <div class="service-card popular">
+
+            <div class="popular-label">
+                PHỔ BIẾN
+            </div>
+
+            <div class="service-icon">✦</div>
+
+            <h3>Gói đồng hành 3 buổi</h3>
+
+            <p>
+                Phù hợp với người muốn có quá trình
+                theo dõi và hỗ trợ tâm lý liên tục.
+            </p>
+
+            <strong>950.000đ / 3 buổi</strong>
+
+            <button onclick="selectPackage('Gói đồng hành 3 buổi - 950.000đ')">
+                Chọn gói
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">☼</div>
+
+            <h3>Tư vấn gia đình</h3>
+
+            <p>
+                Hỗ trợ giao tiếp, thấu hiểu và giải quyết
+                những khó khăn trong mối quan hệ gia đình.
+            </p>
+
+            <strong>500.000đ / buổi</strong>
+
+            <button onclick="selectPackage('Tư vấn gia đình - 500.000đ')">
+                Chọn gói
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SPECIALIST ================= -->
+
+<section class="specialist">
+
+    <div class="specialist-image">
+        <div class="avatar">☺</div>
+    </div>
+
+    <div class="specialist-content">
+
+        <span>ĐỘI NGŨ CHUYÊN MÔN</span>
+
+        <h2>
+            Được lắng nghe<br>
+            bởi những người<br>
+            luôn đồng hành cùng bạn
+        </h2>
+
+        <p>
+            Đội ngũ tư vấn viên được đào tạo chuyên môn,
+            tôn trọng sự riêng tư và đặt trải nghiệm
+            của khách hàng làm trung tâm.
+        </p>
+
+        <div class="specialist-info">
+
+            <div>
+                <strong>5+</strong>
+                <span>năm kinh nghiệm</span>
+            </div>
+
+            <div>
+                <strong>1000+</strong>
+                <span>lượt tư vấn</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<section class="section booking-section" id="booking">
+
+    <div class="section-heading">
+
+        <span>ĐẶT LỊCH</span>
+
+        <h2>
+            Đặt lịch tư vấn
+        </h2>
+
+        <p>
+            Điền thông tin bên dưới để đăng ký
+            một buổi tư vấn phù hợp với bạn.
+        </p>
+
+    </div>
+
+
+    <form id="bookingForm" class="booking-form">
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Họ và tên</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Nhập họ và tên"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Số điện thoại</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Nhập số điện thoại"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Chuyên gia</label>
+
+                <select id="doctor">
+
+                    <option>Chuyên gia Nguyễn Minh Anh</option>
+
+                    <option>
+                        Chuyên gia Trần Thu Hà
+                    </option>
+
+                    <option>
+                        Chuyên gia Lê Hoàng Nam
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>Ngày tư vấn</label>
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Khung giờ</label>
+
+                <select id="time">
+
+                    <option>09:00 - 10:00</option>
+                    <option>10:30 - 11:30</option>
+                    <option>14:00 - 15:00</option>
+                    <option>15:30 - 16:30</option>
+                    <option>19:00 - 20:00</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Gói tư vấn</label>
+
+            <select id="package">
+
+                <option>
+                    Tư vấn cá nhân - 350.000đ
+                </option>
+
+                <option>
+                    Gói đồng hành 3 buổi - 950.000đ
+                </option>
+
+                <option>
+                    Tư vấn gia đình - 500.000đ
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Ghi chú</label>
+
+            <textarea
+                id="note"
+                placeholder="Bạn có thể chia sẻ ngắn gọn nhu cầu của mình..."
+            ></textarea>
+
+        </div>
+
+
+        <button class="submit-btn" type="submit">
+            Xác nhận đặt lịch
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= PAYMENT ================= -->
+
+<section class="payment-section">
+
+    <div>
+
+        <span>THANH TOÁN</span>
+
+        <h2>
+            Phương thức thanh toán
+        </h2>
+
+        <p>
+            Sau khi đặt lịch, bạn có thể lựa chọn
+            phương thức thanh toán phù hợp.
+        </p>
+
+    </div>
+
+
+    <div class="payment-grid">
+
+        <div class="payment-card">
+
+            <div class="payment-icon">
+                QR
+            </div>
+
+            <h3>Quét mã QR</h3>
+
+            <p>
+                Thanh toán nhanh bằng ứng dụng
+                ngân hàng hoặc ví điện tử.
+            </p>
+
+            <button onclick="showPayment('QR')">
+                Thanh toán
+            </button>
+
+        </div>
+
+
+        <div class="payment-card">
+
+            <div class="payment-icon">
+                ↗
+            </div>
+
+            <h3>Chuyển khoản</h3>
+
+            <p>
+                Chuyển khoản trực tiếp theo
+                thông tin của phòng khám.
+            </p>
+
+            <button onclick="showPayment('Chuyển khoản')">
+                Xem thông tin
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PSYCHOLOGICAL TEST ================= -->
+
+<section class="test-section" id="test">
+
+    <div class="test-box">
+
+        <span>TỰ ĐÁNH GIÁ</span>
+
+        <h2>
+            Bạn đang cảm thấy<br>
+            như thế nào?
+        </h2>
+
+        <p>
+            Làm bài trắc nghiệm ngắn để có thêm
+            góc nhìn về trạng thái tâm lý hiện tại.
+        </p>
+
+        <button class="primary-btn" onclick="startTest()">
+            Bắt đầu trắc nghiệm
+        </button>
+
+        <small>
+            * Kết quả chỉ mang tính tham khảo,
+            không thay thế chẩn đoán của chuyên gia.
+        </small>
+
+    </div>
+
+
+    <div id="testArea" class="test-area">
+
+        <h3 id="question">
+            Câu hỏi sẽ xuất hiện ở đây
+        </h3>
+
+        <div id="answers"></div>
+
+        <button
+            id="nextQuestion"
+            class="submit-btn"
+            onclick="nextQuestion()"
+        >
+            Câu tiếp theo
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div>
+
+        <span>LIÊN HỆ</span>
+
+        <h2>
+            Bạn cần được<br>
+            lắng nghe?
+        </h2>
+
+        <p>
+            Hãy liên hệ với An Tâm để được hỗ trợ
+            và lựa chọn hình thức tư vấn phù hợp.
+        </p>
+
+    </div>
+
+
+    <div class="contact-info">
+
+        <div>
+            <strong>☎</strong>
+            <span>0123 456 789</span>
+        </div>
+
+        <div>
+            <strong>✉</strong>
+            <span>hello@antampsychology.vn</span>
+        </div>
+
+        <div>
+            <strong>⌂</strong>
+            <span>Hà Nội, Việt Nam</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="logo">
+
+        <div class="logo-icon">♡</div>
+
+        <div>
+            <strong>An Tâm</strong>
+            <span>Psychology Clinic</span>
+        </div>
+
+    </div>
+
+    <p>
+        © 2026 An Tâm Psychology Clinic.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <button
+            class="close"
+            onclick="closeModal()"
+        >
+            ×
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
